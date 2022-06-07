@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.sedan,
+.suv,
+.luxury {
+    width: 320px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 5px 0 0;
+    margin-top: 100px;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 100px;
+}
+
+.sedan *,
+.suv *,
+.luxury * {
+    padding: 0 30px;
+}
+
+img {
+    margin: 50px 0 10px 0;
+    width: 50px;
+}
+
+h1, button {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    width: 220px;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+}
+
+button {
+    width: 140px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: capitalize;
+    border: none;
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+
+.sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 1100px) {
+    main {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sedan,
+    .suv,
+    .luxury {
+        margin: 0;
+    }
+}
